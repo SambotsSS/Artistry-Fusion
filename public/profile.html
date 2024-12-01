@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Account</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <a href="home.html" aria-label="Go to Home">
+                <img src="home.jpg" alt="Home" class="home-icon">
+            </a>
+            <h1>Account Dashboard</h1>
+            </header>
+        
+
+        <!-- Profile Image and User Info -->
+        <div class="profile-image">
+            <img src="prof.jpeg" alt="Jane Doe">
+        </div>
+        <div class="user-name">User Name</div>
+
+        <!-- Account Options -->
+        <nav class="menu">
+            <a href="myorders.html"><div class="menu-item">Orders</div></a>
+            <a href="cart.html"><div class="menu-item">Cart</div></a>
+            <a href="wishlist.html"><div class="menu-item">Wishlist</div></a>
+            <a href="support.html"><div class="menu-item">Support</div></a>
+        </nav>
+
+        <!-- Log Out Button -->
+            <button class="logout-button"  onclick="logout()">Log Out</button>
+        
+    
+
+        <!-- Footer -->
+        <footer class="footer">
+            <h2>ARTISTRY FUSION</h2>
+            <p>Where Art Unfolds</p>
+        </footer>
+    </div>
+
+    <script>
+        function logout() {
+            localStorage.removeItem("userEmail");
+            window.location.href = "login.html"; // Redirect to login page
+        }
+    </script>
+</body>
+</html>

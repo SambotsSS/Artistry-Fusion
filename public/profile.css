@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    font-family: 'Montagu Slab', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    background-image: url(pic1.jpeg);
+    background-size: cover;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+/* Header with Gradient */
+.header {
+    height: 60px;
+    background: linear-gradient(90deg, #622CD3, #00A3FF);
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.header h1 {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+}
+/* Profile Image with Gradient Border */
+.profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 20px auto;
+    background: linear-gradient(90deg, #622CD3, #00A3FF);
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+
+}
+.profile-image img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+/* User Name */
+.user-name {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+/* Menu Items with Gradient */
+.menu-item {
+    padding: 15px;
+    background: linear-gradient(90deg, #622CD3, #00A3FF);
+    border-radius: 8px;
+    margin: 10px 0;
+    color: white;
+    text-align: center;
+    transition: background 0.3s;
+}
+.menu-item:hover {
+    background: linear-gradient(90deg, #00A3FF, #622CD3); /* Reverse gradient on hover */
+}
+/* Log Out Button with Gradient */
+
+.logout-button {
+    margin-top: 30px;
+    margin-left: 100px;
+    text-align: center;
+    border: none;
+    color: white;
+    width: 40%;
+    background: linear-gradient(90deg, #622CD3, #00A3FF);
+    border-radius: 20px;
+    padding: 10px;
+}
+.logout-button:hover {
+    background: linear-gradient(90deg, #00A3FF, #622CD3); /* Reverse gradient on hover */
+}
+.logout-button p {
+    color: white;
+    font-size: 20px;
+    margin: 0;
+}
+/* Footer Section with Gradient */
+.footer {
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+}
+.footer h2 {
+    color: white;
+    font-size: 22px;
+    margin: 0;
+}
+.footer p {
+    color: white;
+    font-size: 14px;
+    margin: 0;
+}

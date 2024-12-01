@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montagu Slab', serif;
+    background-color: #121212;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 600px;
+    padding: 40px;
+    background: rgba(73, 39, 209, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    position: relative; /* Allows positioning of the title */
+    margin-top: 20px; /* Adjust margin-top for the container */
+}
+
+.title {
+    width: 100%; /* Set to 100% for proper fit */
+    background-color: rgba(73, 39, 209, 0.73);
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px 0; 
+    position: relative; 
+    z-index: 1; /* Bring the title above other elements */
+}
+
+.form-group {
+    top: 45px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.form-group label {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    height: 45px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid rgba(97, 44, 211, 0.85);
+    background-color: rgba(97, 44, 211, 0.2);
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(97, 44, 211, 0.5);
+    transform: translateY(-2px);
+}
+
+.signup-button {
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(73, 39, 209, 0.78);
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.signup-button:hover {
+    background: linear-gradient(90deg, rgba(73, 39, 209, 0.78), rgba(97, 44, 211, 0.85));
+    transform: translateY(-2px);
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.login-link a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.login-link a:hover {
+    color: rgba(97, 44, 211, 1);
+    transform: translateY(-2px);
+}

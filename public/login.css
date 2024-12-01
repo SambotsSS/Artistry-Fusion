@@ -1,0 +1,122 @@
+body {
+    font-family: 'Inria Serif', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 600px;
+    height: 400px; 
+    background-image: url(pic1.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    position: relative;
+}
+
+/* Top Bar */
+.top-bar {
+    width: 100%;
+    height: 55px;
+    background: rgba(73, 39, 209, 0.7);
+    border-radius: 20px 20px 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Title */
+.login-title {
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+    position: relative;
+    margin-top: -35px;
+    z-index: 1;
+}
+
+/* Input Fields */
+.input-field {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-field label {
+    display: block;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.15); 
+    border: 2px solid rgba(73, 39, 209, 0.6);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    color: white; 
+}
+
+.input-field input:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(73, 39, 209, 0.5);
+    transform:translateY(-2px);
+}
+
+/* Button */
+.login-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    background: rgba(73, 39, 209, 0.9);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 10px; 
+}
+
+.login-button:hover {
+    background: rgba(115, 61, 231, 1);
+    box-shadow: 0 5px 15px rgba(115, 61, 231, 0.4);
+}
+
+/* Links */
+.bottom-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px; /* Adjusted margin */
+    font-size: 15px;
+    color: white;
+    position: absolute; /* Positioned at the bottom of the container */
+    bottom: 20px;
+    left: 20px;
+    right: 20px; /* Ensure both sides have space */
+}
+
+.bottom-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.bottom-links a:hover {
+    color: rgba(115, 61, 231, 1);
+}

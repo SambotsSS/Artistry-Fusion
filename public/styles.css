@@ -1,0 +1,265 @@
+/* General Layout */
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #060F27;
+    font-family: 'Inria Serif', serif;
+    color: white;
+    height: 100%;
+}
+
+.container {
+    width: 1350px;
+    height: 2500px;
+    position: relative;
+}
+
+/* Background */
+.main-background {
+    width: 1350px;
+    height: 2500px;
+    position: relative;
+    background-image: url('pic1.jpeg');
+    background-size: cover;
+}
+
+/* Header Section */
+.header {
+    width: 1159px;
+    height: 85px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 106px;
+    height: 85px;
+}
+
+.menu-item {
+    position: absolute;
+    top: 38px;
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.search-bar {
+    width: 293px;
+    height: 41px;
+    position: absolute;
+    text-align: center;
+    top: 31px;
+    left: 866px;
+    background: rgba(33, 47, 99, 0.78);
+    border-radius: 20px;
+    border: 2px solid #D213E2;
+}
+
+.search-text {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 12px;
+    font-family: Inria Serif;
+    font-weight: 700;
+    background-color: transparent; /* Ensures background blends with parent */
+    box-sizing: border-box;
+}
+
+/* Abstract Art Title */
+.abstract-title {
+    position: absolute;
+    left: 580px;
+    font-size: 40px;
+    font-family: 'Montagu Slab', serif;
+    font-weight: 600;
+}
+
+.profile-img {
+    width: 50px;
+    left: 1222px;
+    top: 24px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+/* Highlighted Art Section */
+.highlighted-art {
+    position: absolute;
+    top: 119px;
+    left: 807px;
+    width: 405px;
+    height: 473px;
+}
+
+.highlighted-art img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    border: 1px solid #0591F5;
+}
+
+.highlight-overlay {
+    position: absolute;
+    bottom: -2px;
+    left: 1px;
+    width: 100%;
+    height: 110px;
+    background: rgba(3, 15, 23, 0.66);
+    border-radius: 50px;
+}
+
+.highlight-price {
+    position: absolute;
+    top: 372px;
+    left: 165px;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Inika', serif;
+    font-size: 20px;
+    color: white;
+}
+
+.price-amount {
+    font-weight: bold;
+    
+}
+
+.purchase-button {
+    position: absolute;
+    top: 437px;
+    left: 152.5px;
+    width: 108px;
+    height: 30px;
+    background: rgba(57, 62, 192, 0.88);
+    border-radius: 50px;
+    text-align: center;
+    font-family: 'Katibeh', cursive;
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Gallery Section */
+.gallery {
+    position: absolute;
+    top: 726px;
+    left: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.gallery img {
+    width: 225px;
+    height: 378px;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+
+.border{
+    background: rgba(73.26, 39.25, 209.31, 0.73);
+    width: 1350px;
+    height: 55px;
+    left: 0px;
+    top: 627px;
+    position: absolute;
+}
+
+.text-box {
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    width: 500px; 
+    height: 330px; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white; 
+    padding: 30px;
+    font-style: italic;
+    font-size: 22px; 
+    line-height: 1.8;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+
+.overview {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white;
+    padding: 10px;
+    opacity: 0; /* Hide by default */
+    transform: translateY(20px); /* Slide down */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    border-radius: 10px;
+}
+
+.art-item {
+    position: relative;
+    display: inline-block;
+}
+
+/* Show the overview on hover */
+.art-item:hover .overview {
+    opacity: 1; /* Show on hover */
+    transform: translateY(0); /* Slide up */
+}
+
+/* Like Button Styling */
+.like-button-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black box */
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.like-button {
+    font-size: 24px;
+    color: white; /* White heart outline initially */
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.like-button.liked {
+    color: #e74c3c; /* Red heart when liked */
+}
+
+.results-container {
+    display: grid; /* Use grid layout for results */
+    gap: 20px; /* Space between results */
+    margin-top: 20px; /* Margin above results */
+}
+
+.result-item {
+    border: 1px solid #ccc; /* Optional: Border around each item */
+    border-radius: 8px; /* Optional: Rounded corners for each item */
+    padding: 10px; /* Padding inside each item */
+    background-color: #f9f9f9; /* Optional: Light background for each item */
+}
+
+.result-item img {
+    width: 100%; /* Responsive width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.result-info {
+    text-align: center; /* Center text */
+    margin-top: 10px; /* Space above text */
+}
+

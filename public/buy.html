@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy</title>
+    <link rel="stylesheet" href="buy.css">
+</head>
+<body>
+
+    <div class="back-arrow" onclick="goBack()">
+        &#8592; Back
+    </div>
+
+
+    <div class="container">
+        <div class="art-photo">
+            <img id="artImage" src="" alt="Art Photo" style="width: 100%; height: 100%;">
+        </div>
+
+        <div class="info-panel">
+            <div class="title" id="artTitle">Art Name</div>
+            <div id="artistName">Artist Name: John Doe</div>
+            <div id="category">Category: Abstract Art</div>
+            <div id="contactNumber">Contact Number: +1234567890</div>
+            <div id="artPrice">Price: $500</div>
+        </div>
+        
+        <div class="button-container">
+            <a href="checkout.html">
+                <div class="button" onclick="buyNow()">
+                    <span>BUY NOW</span>
+                </div>
+            </a>
+
+                <div class="button" onclick="addToCart()">
+                    <span>Add to Cart</span>
+                </div>
+            
+        </div>
+    </div>
+    <script src="buy.js"></script>
+</body>
+</html>
